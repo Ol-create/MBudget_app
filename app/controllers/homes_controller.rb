@@ -1,7 +1,7 @@
 class HomesController < ApplicationController
     def splash_screen
         @current_user = current_user
-        # authorize! :read, User
+        authorize! :read, User
     end
     
       private
