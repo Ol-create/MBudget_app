@@ -1,14 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe 'Expenses', type: :request do
-  before(:each) do
+RSpec.describe GroupExpense, type: :model do
+  before :each do
     @user = User.create(
       name: 'Augusto',
       email: 'augusto@dev.com',
       password: '123456',
       password_confirmation: '123456'
     )
-    sign_in @user
     @group = Group.create(
       author_id: @user.id,
       name: 'Food',
@@ -19,25 +18,21 @@ RSpec.describe 'Expenses', type: :request do
       name: 'Burger',
       amount: 100
     )
-    GroupExpense.create(
+    @group_expense = GroupExpense.create(
       group_id: @group.id,
       expense_id: @expense.id
     )
   end
 
-  describe 'GET /index' do
-    before { get group_path(@group) }
-
-    it 'returns a 200 status code' do
-      expect(response).to have_http_status(200)
+  describe 'GroupExpense Model Properties' do
+    it 'should have a group' do
+      @group_expense.group_id = nil
+      expect(@group_expense).to_not be_valid
     end
 
-    it 'renders the index template' do
-      expect(response).to render_template('show')
-    end
-
-    it 'should render the correct text' do
-      expect(response.body).to include('Burger')
+    it 'should have an expense' do
+      @group_expense.expense_id = nil
+      expect(@group_expense).to_not be_valid
     end
   end
 end

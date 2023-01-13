@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe Expense, type: :model do
   before :each do
     @user = User.create(
-      name: 'Oluyemi',
-      email: 'oluola96@gmail.com',
+      name: 'Augusto',
+      email: 'augusto@dev.com',
       password: '123456',
       password_confirmation: '123456'
     )
