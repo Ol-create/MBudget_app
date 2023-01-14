@@ -71,7 +71,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Live Demo Link](https://blog-app-rails.herokuapp.com/)
+
+> Access it online [clike here](https://silent-water-2124.fly.dev/)
+> App presentation [click here](https://drive.google.com/file/d/1aUEGP3pB7W4pvB2qbyADhJITkHE07GCI/view?usp=drivesdk)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
