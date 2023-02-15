@@ -79,7 +79,7 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+
 production:
   <<: *default
-url: 'postgres://oluyemi:3G2Chdir1FWPEK8LiMdUIVwMnCL3t981@dpg-cfm76fta499591csb1mg-a/budget_app_o7y9'
-
+  url: <%= ENV['DATABASE_URL'] %>
