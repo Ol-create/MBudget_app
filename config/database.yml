@@ -81,5 +81,5 @@ test:
 #
 production:
   <<: *default
-url: <%= ENV['DATABASE_URL'] %>
+url: 'postgres://oluyemi:3G2Chdir1FWPEK8LiMdUIVwMnCL3t981@dpg-cfm76fta499591csb1mg-a/budget_app_o7y9'
 
