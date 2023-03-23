@@ -128,7 +128,7 @@ bundle install
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-- Deployed to Render.com
+- #### Deployed to heroku
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
